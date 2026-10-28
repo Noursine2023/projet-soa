@@ -1,0 +1,21 @@
+type Prediction {
+    id: ID
+    patientId: Int
+    score: Float
+    riskLevel: String
+    datePrediction: String
+}
+
+type Statistiques {
+    total: Int
+    risquesEleves: Int
+    scoreMoyen: Float
+}
+
+type Query {
+    predictions: [Prediction]
+    predictionById(id: ID!): Prediction
+    predictionsByPatient(patientId: Int!): [Prediction]
+    predictionsByRiskLevel(riskLevel: String!): [Prediction]
+    statistiques: Statistiques
+}

@@ -1,0 +1,14 @@
+Notifications 
+
+{ "patient_id": 1, "risque": 0.95 }
+
+{ "patient_id": 5, "risque": 0.78 }
+
+{ "patient_id": 6, "risque": 0.85 }
+
+{ "patient_id": 7, "risque": 0.67 }
+
+
+node index.js
+
+graphql : http://localhost:8083/graphiql?path=/graphql
